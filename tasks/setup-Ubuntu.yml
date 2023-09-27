@@ -22,7 +22,7 @@
 
 - name: Ensure required packages are installed.
   ansible.builtin.apt:
-    name: {{item }}
+    name: "{{ item }}"
     state: present
   with_items:
     - curl
