@@ -68,4 +68,4 @@
     state: present
     update_cache: true
     dpkg_options: 'force-confdef,force-confold'
-  when: nginx_native_use is changed
+  when: nginx_native_added is changed
