@@ -60,7 +60,7 @@
       Pin-Priority: 900
     force: true
     backup: true
-  when: nginx_native_use is changed
+  when: nginx_native_added is changed
 
 - name: Ensure nginx will reinstall if the nginx repository was just added.
   ansible.builtin.apt:
